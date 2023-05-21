@@ -1,8 +1,6 @@
 package fr.yncrea.cin3.pyramin;
 
 import fr.yncrea.cin3.pyramin.service.PyraminFileService;
-import fr.yncrea.cin3.pyramin.service.solvers.PyraminRecursiveService;
-import fr.yncrea.cin3.pyramin.service.solvers.PyraminReduceService;
 import fr.yncrea.cin3.pyramin.service.solvers.PyraminService;
 import fr.yncrea.cin3.pyramin.service.solvers.PyraminServiceImpl;
 
@@ -19,7 +17,6 @@ public class Main {
     private void run() throws IOException {
         var content = fs.loadFromFile("5.txt");
 
-        // TODO recherche la somme minimum
         PyraminService service = new PyraminServiceImpl();
 
         var start = System.nanoTime();
